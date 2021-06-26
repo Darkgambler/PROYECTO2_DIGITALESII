@@ -2,9 +2,17 @@ module probador #( parameter DATA_BITS = 8,
 		   parameter ADDR_BITS = 6 )
                  ( output reg [DATA_BITS-1:0] data_in, 
 		   output reg [ADDR_BITS-1:0] addr_write, addr_read,
-		   output reg 		      write, read, clk );
+		   output reg 		      write, read, clk,
+		   input wire [DATA_BITS-1:0] data_out, data_out_synt );
 
    integer 				      k;
+
+   always @( posedge clk ) begin: VERIFICADOR_OUTPUTS
+      if( data_out !== data_out_synt ) begin
+	 $display( "Discrepcancia entre salidas en %t", $time );
+      end
+   end
+   
    
    initial begin
       $dumpfile( "000graf.vcd" );
