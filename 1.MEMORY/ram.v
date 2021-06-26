@@ -7,11 +7,11 @@
 
 module ram #( parameter DATA_BITS = 8,
 	      parameter ADDR_BITS = 6 )
-            ( input wire [DATA_BITS-1:0]  data_in,
-	      input wire [ADDR_BITS-1:0]  addr_write,
-	      input wire [ADDR_BITS-1:0]  addr_read,
-	      input wire 		  write, read, clk,
-	      output reg [DATA_BITS-1:0]  data_out );
+            ( output reg [DATA_BITS-1:0]  data_out,
+	      input wire [DATA_BITS-1:0] data_in,
+	      input wire [ADDR_BITS-1:0] addr_write,
+	      input wire [ADDR_BITS-1:0] addr_read,
+	      input wire 		 write, read, clk );
 
    
    parameter 		RAM_SIZE = 2 ** ADDR_BITS;
