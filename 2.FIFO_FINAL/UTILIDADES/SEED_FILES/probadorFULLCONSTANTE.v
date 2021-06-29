@@ -41,7 +41,7 @@ module probador #( parameter DATA_BITS = 10,
    end
    
    initial begin
-      $dumpfile( "000normal.vcd" );
+      $dumpfile( "000fullconstante.vcd" );
       $dumpvars( 0 );
    end
 
@@ -65,21 +65,21 @@ module probador #( parameter DATA_BITS = 10,
       fifo_data_in_n = $random;
       fifo_write_n = 0;
       fifo_read_n = 0;
-      // LLENADO PARCIAL DEL FIFO
-      repeat( 4 ) begin
+      // LLENADO DEL FIFO
+      repeat( 8 ) begin
 	 #2 
 	 fifo_data_in_n = $random;
 	 fifo_write_n = 1;
 	 fifo_read_n = 0;
       end
-      // OPERACION NORMAL LECTURA Y ESCRITURA
+      // FIFO FUNCIONANDO SIEMPRE LLENO
       repeat( 20 ) begin
-	 #2 
+	 #2
 	 fifo_data_in_n = $random;
 	 fifo_write_n = 1;
 	 fifo_read_n = 1;
       end
-    
+	   
 
       #25 $finish;
    end

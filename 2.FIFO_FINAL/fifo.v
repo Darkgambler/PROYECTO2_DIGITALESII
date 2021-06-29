@@ -36,16 +36,21 @@ module fifo #( parameter DATA_BITS = 10,
     */
    
    always @( * ) begin: ALMOST_FULL_LOGIC
-      if( write_ptr - read_ptr >= high_limit ) begin
-	 fifo_full_out = 1'b1;
+      if( high_limit == 1'b0 ) begin
+	 fifo_full_out = full;
       end
       else begin
-	 if( full ) begin
+	 if( write_ptr - read_ptr >= high_limit ) begin
 	    fifo_full_out = 1'b1;
 	 end
 	 else begin
-	    fifo_full_out = 1'b0;
-	 end
+	    if( full ) begin
+	       fifo_full_out = 1'b1;
+	    end
+	    else begin
+	       fifo_full_out = 1'b0;
+	    end
+	 end // else: !if( write_ptr - read_ptr >= high_limit )
       end
    end
    

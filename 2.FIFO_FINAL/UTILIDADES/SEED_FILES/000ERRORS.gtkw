@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Jun 28 18:12:20 2021
+[*]
+[dumpfile] "/home/darkgambler/Documentos/ACTUALES/1.DIGITALES2/PROYECTO2/PROYECTO2_DIGITALESII/2.FIFO_FINAL/000errors.vcd"
+[dumpfile_mtime] "Mon Jun 28 18:08:05 2021"
+[dumpfile_size] 142864
+[savefile] "/home/darkgambler/Documentos/ACTUALES/1.DIGITALES2/PROYECTO2/PROYECTO2_DIGITALESII/2.FIFO_FINAL/000ERRORS.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 163 102
+*-3.849605 23 47 53 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 233
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@200
+-INPUTS
+@28
+testbench.clk
+testbench.reset
+@22
+testbench.fifo_data_in[9:0]
+@28
+testbench.fifo_write
+testbench.fifo_read
+@200
+-INTERMED
+@25
+[color] 2
+testbench.COND.read_ptr[2:0]
+[color] 2
+testbench.COND.write_ptr[2:0]
+@200
+-OUTPUTS
+@28
+[color] 7
+testbench.error_fifo_out
+[color] 5
+testbench.error_fifo_out_synt
+[pattern_trace] 1
+[pattern_trace] 0
