@@ -1,4 +1,6 @@
-/* MEMORY MODIFICADA POR FREDDY ZUNIGA CERDAS
+/* MEMORY MODIFICADA POR FREDDY ZUNIGA CERDAS PARA EL PROYECTO 2  
+ * DE CIRCUITOS DIGITALES II, I SEMESTRE 2021, 
+ * UNIVERSIDAD DE COSTA RICA
  * MODIFICADA DE UNA MEMORY RAM OBTENIDA EN EL SIGUIENTE LUGAR:
  * https://www.intel.com/content/www/us/en/programmable/support/
  * support-resources/design-examples/design-software/verilog/
