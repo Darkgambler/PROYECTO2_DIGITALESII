@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Jul  6 09:36:51 2021
+[*]
+[dumpfile] "/home/darkgambler/Documentos/ACTUALES/1.DIGITALES2/PROYECTO2/PROYECTO2_DIGITALESII/4.CONTADORES/000contador.vcd"
+[dumpfile_mtime] "Tue Jul  6 09:31:55 2021"
+[dumpfile_size] 32151
+[savefile] "/home/darkgambler/Documentos/ACTUALES/1.DIGITALES2/PROYECTO2/PROYECTO2_DIGITALESII/4.CONTADORES/000CONTADOR.gtkw"
+[timestart] 0
+[size] 1169 600
+[pos] -1 -1
+*-4.731691 16 40 74 48 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 233
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@200
+-INPUTS
+@28
+testbench.clk
+@29
+testbench.PROBADOR.reset
+@28
+testbench.PROBADOR.push0
+testbench.PROBADOR.push1
+testbench.PROBADOR.push2
+testbench.PROBADOR.push3
+testbench.PROBADOR.idle
+testbench.PROBADOR.req
+@24
+testbench.PROBADOR.idx[1:0]
+@200
+-OUTPUTS
+@24
+[color] 7
+testbench.PROBADOR.counter_out[4:0]
+@28
+[color] 7
+testbench.PROBADOR.valid_out
+@24
+[color] 5
+testbench.PROBADOR.counter_out_synt[4:0]
+@28
+[color] 5
+testbench.PROBADOR.valid_out_synt
+[pattern_trace] 1
+[pattern_trace] 0

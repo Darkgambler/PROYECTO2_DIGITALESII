@@ -1,0 +1,8 @@
+read_verilog contadores.v
+hierarchy -check -top contadores
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+dfflibmap -liberty UTILIDADES/cmos_cells.lib
+abc -liberty UTILIDADES/cmos_cells.lib
+clean -purge
+write_verilog synth_contadores.v
